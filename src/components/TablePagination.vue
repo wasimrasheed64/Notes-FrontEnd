@@ -6,7 +6,7 @@ const props = defineProps<{
 }>();
 const emits = defineEmits(['changPage']);
 const changePage = (page: number) => {
-  if(page < 1 ||page === props.currentPage|| page === props.lastPage) return;
+  if(page < 1 || page === props.lastPage ) return;
   emits('changPage',page)
 }
 
